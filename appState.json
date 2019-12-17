@@ -1,0 +1,108 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "0d895524-a724-469a-a3e3-6efcfac0aca7": {
+        "id": "0d895524-a724-469a-a3e3-6efcfac0aca7",
+        "parent": null,
+        "name": "gcptesttttt",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "c3c82e11-5562-4fe2-ad86-f10bd275d8ad"
+        ],
+        "isRemovable": false,
+        "filePath": "gcptesttttt"
+      },
+      "c3c82e11-5562-4fe2-ad86-f10bd275d8ad": {
+        "id": "c3c82e11-5562-4fe2-ad86-f10bd275d8ad",
+        "parent": "0d895524-a724-469a-a3e3-6efcfac0aca7",
+        "name": "function.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "gcptesttttt/function.js",
+        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0
+        },
+        "triggers": [
+          {
+            "resourceName": "http-trigger",
+            "config": {}
+          }
+        ],
+        "testCases": {
+          "438b8681-94b0-4f3b-b93f-55edfe2d587b": {
+            "id": "438b8681-94b0-4f3b-b93f-55edfe2d587b",
+            "name": "Test event",
+            "functionId": "c3c82e11-5562-4fe2-ad86-f10bd275d8ad",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      },
+      "56b1edc3-4912-432b-823a-e24c0cd1b5c1": {
+        "id": "56b1edc3-4912-432b-823a-e24c0cd1b5c1",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js",
+        "code": "// This file is used to register all your cloud functions in GCP.\n// DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nexports.gcptestttttfunction = require(\"./gcptesttttt/function.js\").handler;"
+      },
+      "2f8692fc-6f86-4a60-b9d1-86495b5e0559": {
+        "id": "2f8692fc-6f86-4a60-b9d1-86495b5e0559",
+        "parent": null,
+        "name": "main.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "main.py",
+        "code": "# This file is used to register all your cloud functions in GCP.\n# DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\n"
+      }
+    },
+    "rootNode": "0d895524-a724-469a-a3e3-6efcfac0aca7",
+    "openFiles": [
+      "c3c82e11-5562-4fe2-ad86-f10bd275d8ad"
+    ],
+    "currentFileId": "c3c82e11-5562-4fe2-ad86-f10bd275d8ad",
+    "resources": {
+      "http-trigger": {
+        "name": "http-trigger",
+        "type": "http-trigger",
+        "config": {}
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "gcptesttttt",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east1",
+    "platform": "GCP",
+    "platformRegions": {},
+    "lastSave": 1576581607791
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "gcptesttttt",
+      "url": "https://github.com/Indunil1992/gcptesttttt"
+    }
+  }
+}
