@@ -9,7 +9,6 @@
         "isDirectory": true,
         "children": [
           "c3c82e11-5562-4fe2-ad86-f10bd275d8ad",
-          "9f6e82de-0791-4d2a-937c-855cc512646a",
           "c3df4ba6-06b7-47f6-8dc5-4323dac36b8b"
         ],
         "isRemovable": false,
@@ -68,25 +67,7 @@
         "children": [],
         "isRemovable": false,
         "filePath": "main.py",
-        "code": "# This file is used to register all your cloud functions in GCP.\n# DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nfrom gcptesttttt.newP import handler as gcptestttttnewP"
-      },
-      "9f6e82de-0791-4d2a-937c-855cc512646a": {
-        "id": "9f6e82de-0791-4d2a-937c-855cc512646a",
-        "parent": "0d895524-a724-469a-a3e3-6efcfac0aca7",
-        "name": "newP.py",
-        "type": "PYTHON_LAMBDA",
-        "isDirectory": false,
-        "children": [],
-        "isRemovable": true,
-        "filePath": "gcptesttttt/newP.py",
-        "code": "def handler(request):\n    \n    return \"Successfully executed\"\n",
-        "config": {
-          "runtime": "python37",
-          "timeout": 60,
-          "memory": 128,
-          "triggerType": 0
-        },
-        "triggers": []
+        "code": "# This file is used to register all your cloud functions in GCP.\n# DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\n"
       },
       "c3df4ba6-06b7-47f6-8dc5-4323dac36b8b": {
         "id": "c3df4ba6-06b7-47f6-8dc5-4323dac36b8b",
@@ -102,8 +83,7 @@
     },
     "rootNode": "0d895524-a724-469a-a3e3-6efcfac0aca7",
     "openFiles": [
-      "c3c82e11-5562-4fe2-ad86-f10bd275d8ad",
-      "9f6e82de-0791-4d2a-937c-855cc512646a"
+      "c3c82e11-5562-4fe2-ad86-f10bd275d8ad"
     ],
     "currentFileId": "c3c82e11-5562-4fe2-ad86-f10bd275d8ad",
     "resources": {
@@ -149,7 +129,7 @@
     "projectRegion": "us-east1",
     "platform": "GCP",
     "platformRegions": {},
-    "lastSave": 1576582551818
+    "lastSave": 1576582614290
   },
   "VCS_STATE": {
     "provider": "GitHub",
