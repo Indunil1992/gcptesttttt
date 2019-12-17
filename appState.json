@@ -24,16 +24,17 @@
         "children": [],
         "isRemovable": true,
         "filePath": "gcptesttttt/function.js",
-        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
+        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed pubsub\"});\n}",
         "config": {
           "runtime": "nodejs8",
           "timeout": 60,
           "memory": 128,
-          "triggerType": 0
+          "triggerType": 1,
+          "handler": "handler"
         },
         "triggers": [
           {
-            "resourceName": "http-trigger",
+            "resourceName": "pubsubpubsubindunil",
             "config": {}
           }
         ],
@@ -85,12 +86,7 @@
           "memory": 128,
           "triggerType": 0
         },
-        "triggers": [
-          {
-            "resourceName": "http-trigger",
-            "config": {}
-          }
-        ]
+        "triggers": []
       },
       "c3df4ba6-06b7-47f6-8dc5-4323dac36b8b": {
         "id": "c3df4ba6-06b7-47f6-8dc5-4323dac36b8b",
@@ -109,12 +105,23 @@
       "c3c82e11-5562-4fe2-ad86-f10bd275d8ad",
       "9f6e82de-0791-4d2a-937c-855cc512646a"
     ],
-    "currentFileId": "9f6e82de-0791-4d2a-937c-855cc512646a",
+    "currentFileId": "c3c82e11-5562-4fe2-ad86-f10bd275d8ad",
     "resources": {
       "http-trigger": {
         "name": "http-trigger",
         "type": "http-trigger",
         "config": {}
+      },
+      "pubsubpubsubindunil": {
+        "name": "pubsubpubsubindunil",
+        "type": "CloudPubSub",
+        "config": {
+          "mode": 0,
+          "topic": {
+            "name": "pubsubindunil",
+            "subscriptions": []
+          }
+        }
       }
     },
     "customTemplate": {
@@ -142,7 +149,7 @@
     "projectRegion": "us-east1",
     "platform": "GCP",
     "platformRegions": {},
-    "lastSave": 1576582088519
+    "lastSave": 1576582551818
   },
   "VCS_STATE": {
     "provider": "GitHub",
